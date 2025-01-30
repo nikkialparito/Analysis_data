@@ -17,11 +17,7 @@ alt.themes.enable("dark")
 
 import pandas as pd  # Import pandas with alias pd
 
-file_path = '/content/drive/MyDrive/netflix/netflix_titles.csv'
-df = pd.read_csv(netflix_titles.csv)
-     
-
-df_reshaped = pd.read_csv(file_path)
+df_reshaped = pd.read_csv('netflix_titles.csv')
 
 from google.colab import drive
 drive.mount('/content/drive')
