@@ -23,12 +23,8 @@ df = pd.read_csv(file_path)
 
 df_reshaped = pd.read_csv(file_path)
 
-     
-
 from google.colab import drive
 drive.mount('/content/drive')
-     
-Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
 
 # prompt: create streamlit dashboard
 
