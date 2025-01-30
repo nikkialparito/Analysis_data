@@ -29,7 +29,7 @@ st.header("Netflix Data")
 
 # Create a bar chart showing the number of movies and TV shows
 st.header("Number of Movies and TV Shows")
-st.plotly_chart(fig)
+
 
 
 # Create a scatter plot showing the relationship between release year and rating
