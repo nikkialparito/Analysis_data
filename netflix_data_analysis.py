@@ -71,43 +71,6 @@ rating_counts = df["rating"].value_counts()
 fig = px.pie(values=rating_counts.values, names=rating_counts.index)
 st.plotly_chart(fig)
      
-2025-01-30 07:54:21.751 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:21.833 
-  Warning: to view this Streamlit app on a browser, run it with the following
-  command:
-
-    streamlit run /usr/local/lib/python3.11/dist-packages/colab_kernel_launcher.py [ARGUMENTS]
-2025-01-30 07:54:21.835 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:21.837 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:21.839 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:21.925 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:21.927 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:21.930 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:21.933 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.671 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.674 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.679 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.683 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.685 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.687 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.801 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.806 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.811 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.813 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.819 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.821 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.972 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.979 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.982 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.985 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.989 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:22.990 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:23.059 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:23.062 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:23.064 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-01-30 07:54:23.067 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-DeltaGenerator()
-
 script_content = """
 import streamlit as st
 import pandas as pd
