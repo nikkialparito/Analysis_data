@@ -34,7 +34,6 @@ st.header("Number of Movies and TV Shows")
 
 # Create a scatter plot showing the relationship between release year and rating
 st.header("Relationship between Release Year and Rating")
-fig = px.scatter(df, x="release_year", y="rating")
 st.plotly_chart(fig)
 
 # Create a map showing the distribution of content by country
