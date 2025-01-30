@@ -121,6 +121,3 @@ with open(file_path, "w") as file:
     file.write(script_content)
 
 print(f"Script saved as {file_path}")
-
-     
-Script saved as /content/drive/MyDrive/app.py
