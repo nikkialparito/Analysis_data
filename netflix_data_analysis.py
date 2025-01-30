@@ -19,9 +19,6 @@ import pandas as pd  # Import pandas with alias pd
 
 df_reshaped = pd.read_csv('netflix_titles.csv')
 
-from google.colab import drive
-drive.mount('/content/drive')
-
 # prompt: create streamlit dashboard
 
 st.title("Netflix Dashboard")
