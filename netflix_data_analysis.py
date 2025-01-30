@@ -29,7 +29,7 @@ st.header("Netflix Data")
 
 # Create a bar chart showing the number of movies and TV shows
 st.header("Number of Movies and TV Shows")
-fig = px.bar(df, x="type", color="type")
+fig = px.bar(df, x="type", color="title")
 st.plotly_chart(fig)
 
 
