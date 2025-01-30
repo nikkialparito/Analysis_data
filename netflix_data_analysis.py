@@ -38,11 +38,11 @@ df[df.duplicated(keep='first')]
 df.drop_duplicates(keep='first',inplace=True)
 
 plt.figure(figsize=(10,6))
-    plt.hist(df['show_id'],color='y')
-    plt.title('Show ID Distribution',size=18)
-    plt.xlabel('Show ID',size=14)
-    plt.ylabel('Density',size=14)
-    plt.show()
+plt.hist(df['show_id'],color='y')
+plt.title('Show ID Distribution',size=18)
+plt.xlabel('Show ID',size=14)
+plt.ylabel('Density',size=14)
+plt.show()
 
 plt.figure(figsize=(10,6))
 sns.histplot(df.country)
