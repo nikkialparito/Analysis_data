@@ -14,9 +14,6 @@ st.set_page_config(
     initial_sidebar_state="expanded")
 
 alt.themes.enable("dark")
-     
-2025-01-30 06:01:26.570 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-ThemeRegistry.enable('dark')
 
 import pandas as pd  # Import pandas with alias pd
 
