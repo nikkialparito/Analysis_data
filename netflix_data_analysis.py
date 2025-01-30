@@ -1,4 +1,69 @@
+import pandas as pd
+import altair as alt
+import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+st.set_page_config(
+    page_title="Netflix Dashboard",
+    page_icon="🏂",
+    layout="wide",
+    initial_sidebar_state="expanded")
+
+alt.themes.enable("dark")import streamlit as st
+
+import pandas as pd  # Import pandas with alias pd
+
+file_path = '/content/drive/MyDrive/netflix/netflix_titles.csv'
+df = pd.read_csv(file_path)
+
+df_reshaped = pd.read_csv(file_path)
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+# prompt: create streamlit dashboard
+
+st.title("Netflix Dashboard")
+
+# Display the DataFrame
+st.header("Netflix Data")
+st.dataframe(df)
+
+# Create a bar chart showing the number of movies and TV shows
+st.header("Number of Movies and TV Shows")
+fig = px.bar(df, x="type", color="type")
+st.plotly_chart(fig)
+
+
+# Create a scatter plot showing the relationship between release year and rating
+st.header("Relationship between Release Year and Rating")
+fig = px.scatter(df, x="release_year", y="rating")
+st.plotly_chart(fig)
+
+# Create a map showing the distribution of content by country
+st.header("Distribution of Content by Country")
+country_counts = df["country"].value_counts().reset_index()
+country_counts.columns = ["Country", "Count"]
+
+# Handle cases where country is not specified
+country_counts = country_counts[country_counts["Country"].notna()]
+
+fig = px.choropleth(country_counts,
+                    locations="Country",
+                    locationmode="country names",
+                    color="Count",
+                    color_continuous_scale=px.colors.sequential.Plasma)
+st.plotly_chart(fig)
+
+
+# Create a pie chart showing the distribution of content by rating
+st.header("Distribution of Content by Rating")
+rating_counts = df["rating"].value_counts()
+fig = px.pie(values=rating_counts.values, names=rating_counts.index)
+st.plotly_chart(fig)
+
+script_content = """
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -44,3 +109,12 @@ st.dataframe(df_filtered[['title', 'country', 'release_year', 'duration', 'ratin
 
 # Footer
 st.markdown("🔍 **Use the sidebar to filter movies by country!**")
+"""
+
+file_path = "/content/drive/MyDrive/app.py"  # Change this if needed
+
+with open(file_path, "w") as file:
+    file.write(script_content)
+
+print(f"Script saved as {file_path}")
+
