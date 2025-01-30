@@ -25,7 +25,7 @@ st.title("Netflix Dashboard")
 
 # Display the DataFrame
 st.header("Netflix Data")
-st.dataframe(df)
+
 
 # Create a bar chart showing the number of movies and TV shows
 st.header("Number of Movies and TV Shows")
