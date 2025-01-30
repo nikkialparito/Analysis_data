@@ -145,8 +145,6 @@ plt.xticks(size=13)
 plt.yticks(size=13)
 plt.show()
 
-!pip install streamlit==1.28.1
-
 import streamlit as st
 import pandas as pd
 import altair as alt
